@@ -14,14 +14,15 @@ public class Publisher {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @OneToMany
-    @JoinColumn(name = "publisher_id")
-    private Set<Book> books = new HashSet<>();
     private String name;
     private String addressLine1;
     private String city;
     private String state;
     private String zip;
+
+    @OneToMany
+    @JoinColumn(name = "publisher_id")
+    private Set<Book> books = new HashSet<>();
 
     public Publisher() {
     }
