@@ -66,7 +66,8 @@ public class Author {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
+//                this call makes callback to book where books call authors and this creates look
+//                ", books=" + books +
                 '}';
     }
 

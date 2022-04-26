@@ -16,7 +16,6 @@ public class Book {
 
     private String title;
     private String isbn;
-
     @ManyToOne
     private Publisher publisher;
 
@@ -79,7 +78,7 @@ public class Book {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", isbn='" + isbn + '\'' +
-                ", authors=" + authors +
+//                ", authors=" + authors +
                 '}';
     }
 
